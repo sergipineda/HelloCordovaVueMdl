@@ -5,7 +5,7 @@ import Hello from './components/Hello.vue'
 import Home from './components/Home.vue'
 import Dashboard from './components/Dashboard.vue'
 import Cordova from './components/Cordova.vue'
-
+import Cordova from './components/Promos.vue'
 Vue.use(VueRouter)
 
 // Create a router instance.
@@ -19,6 +19,16 @@ var router = new VueRouter()
 // Vue.extend(), or just a component options object.
 // We'll talk about nested routes later.
 router.map({
+
+  '*':{
+  component: {
+    template:
+    '<div>' +
+        '<h1>404 not found</h1>' +
+    '</div>'
+  }
+},
+
   '/hello': {
     component: Hello
   },
