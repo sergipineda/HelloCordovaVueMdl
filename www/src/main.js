@@ -5,7 +5,8 @@ import Hello from './components/Hello.vue'
 import Home from './components/Home.vue'
 import Dashboard from './components/Dashboard.vue'
 import Cordova from './components/Cordova.vue'
-import Cordova from './components/Promos.vue'
+import Promos from './components/Promos.vue'
+import Cards from './components/Cards.vue'
 Vue.use(VueRouter)
 
 // Create a router instance.
@@ -40,6 +41,12 @@ router.map({
   },
   '/cordova': {
     component: Cordova
+  },
+  '/promos': {
+    component: Promos
+  },
+  '/cards': {
+    component: Cards
   }
 })
 // Now we can start the app!

@@ -1,3 +1,4 @@
+
 <template>
     <div class="promos">
         Hola aqui les promos!
@@ -10,3 +11,4 @@
         background-color: rebeccapurple;
     }
 </style>
+
